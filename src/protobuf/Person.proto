@@ -1,0 +1,39 @@
+syntax = "proto2";
+package com.cyt.protobuf;
+
+option optimize_for = SPEED;
+option java_package = "com.cyt.netty.test06";
+option java_outer_classname = "MyDataInfo";
+
+message MyMessage {
+
+  enum DataType{
+    personType = 1;
+    dogType = 2;
+    catType = 3;
+  }
+
+  required DataType data_type = 1;
+
+  oneof dataBody{
+    Person person = 2;
+    Dog dog = 3;
+    Cat cat = 4;
+  }
+}
+
+message Person {
+  required string name = 1;
+  optional int32 age = 2;
+  optional string address = 3;
+}
+
+message Dog {
+  optional string dog_name = 1;
+  optional string type = 2;
+}
+
+message Cat {
+  optional string cat_name = 1;
+  optional string size = 2;
+}
