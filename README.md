@@ -1,5 +1,6 @@
 - com.cyt.netty
-    - test01: 
+    - test01:
+        - 収
         -【标签】netty-服务端 + http；
         -【实现】浏览器或 curl 发送请求： http://locolhost:8899，在当前页面显示或返回 hello world； 
         -【学习】1）http 和 curl 的区别 2）channel 的生命周期：Added、Registered、Active、执行自定义handler 中的 channelRead0、in_active、unregistered；
