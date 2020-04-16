@@ -31,7 +31,7 @@
     - 【标签】（其他 RPC 框架）netty 对 Thrift 的支持（IDL（Interface Description Language））；
     - 【实现】客户端调用 getPersonByUserName 和 savePerson 方法，服务端打印出从客户端获取的对象参数；
     - 【学习】1）Thrift 的定义格式，包括命名空间、struct、exception 和 service； 2）Thrift 的传输协议及原理； 3）支持的服务模型；             
-- com.cyt.nio
+- com.cyt.nio【NIO 的三个核心概念：从 channel、buffer 到 selector】
     - NioTest01: 只有 buffer 自己玩“读写”;
     - NioTest02: buffer 和 InputStream 两个玩“读写”;
     - NioTest03: buffer 和 OutputStream 两个玩“读写”;
