@@ -9,7 +9,7 @@ import io.netty.util.CharsetUtil;
 
 import java.net.URI;
 
-
+//Inbound 入站，数据从外部到服务端
 public class  TestHttpServerHandler extends SimpleChannelInboundHandler<HttpObject> {
     /**
      * 问方式有两种：1）浏览器访问 2）curl "http:\\localhost:8899"
